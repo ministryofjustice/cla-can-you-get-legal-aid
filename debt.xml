@@ -135,16 +135,14 @@
 <br>Saturday 9am to 12:30pm
 <br><a href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
 
-<p><a href="http://callmeback.justice.gov.uk/">Ask for a free call back</a></p> ]]></word>
+<p><a href="http://callmeback.justice.gov.uk/">Ask for a free call back</a></p>
+
+<p>You may also be able to get last-minute help on the day of the hearing from an adviser in the court building.</p>
+
+ ]]></word>
 
 </outcome>
 
-
-<outcome id="r2" postcode="true" result="eligible" category="HOU">
-	<word><![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
-
-<p>Contact a legal adviser or solicitor in your area.</p> ]]></word>
-</outcome>
 
 <outcome id="r3" postcode="true" law-society="true" result="not eligible">
 	<word><![CDATA[ <h2 class="result-title"> It looks like you won't be able to get legal aid.</h2>
@@ -156,6 +154,8 @@
 <li> <a href="http://www.stepchange.org">StepChange Debt Charity</a></li> 
 <li> <a href="http://www.adviceguide.org.uk">Citizens Advice</a></li>
 </ul>
+
+<p>You may also be able to get last-minute help on the day of the hearing from an adviser in the court building.</p>
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p>
  ]]></word>
@@ -194,6 +194,8 @@
 <li><a href="http://www.adviceguide.org.uk">Citizens Advice</a> </li>
 <li><a href="http://www.lawcentres.org.uk/">Law Centres Network</a> </li>
 </ul> 
+
+<p>You may also be able to get last-minute help on the day of the hearing from an adviser in the court building.</p>
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
 

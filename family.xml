@@ -1,6 +1,15 @@
 
 <category name="Family">
 
+<question id="q0">
+	<word><![CDATA[     Are you under 18?  ]]></word>
+
+<options>
+		<option id="o1" value="yes" target="r1" />
+		<option id="o2" value="no" target="q1" />
+	</options>
+</question>
+
 <question id="q1">
 	<word><![CDATA[     Has your partner hurt, abused or threatened you or your child?  ]]></word>
 <hint> <![CDATA[     Abuse can mean physical or mental abuse, including violence, sexual abuse or neglect.   ]]></hint>	

@@ -18,7 +18,7 @@
 </question>
 
 <question id="q3">
-	<word><![CDATA[     Do you want to appeal against the tribunal's decision?     ]]></word>
+	<word><![CDATA[     Are you now appealing against the tribunal's decision?     ]]></word>
 	<options>
 		<option id="o1" value="yes" target="f1" />
 		<option id="o2" value="no" target="r3" />
@@ -70,7 +70,7 @@
 <outcome id="r1" result="eligible">
 	<word><![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2> 
 
-<p><strong> Contact Civil Legal Advice</strong>
+<p>You can contact your <a href="http://www.lawcentres.org.uk">local Law Centre</a> or Civil Legal Advice:</p>
 <br><a href="https://claonlineadvice.justice.gov.uk/">Apply online</a></p>
 
 <p><strong>Phone:</strong> 0845 345 4 345
