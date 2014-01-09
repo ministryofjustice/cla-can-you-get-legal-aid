@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+html { background: #DEE0E2; }
+
 body {font-family: Helvetica, Arial, sans-serif;}
     
 #global-header .header-proposition #proposition-name small.beta {background-color: #F47738; color: #FFFFFF; font-family: "nta",Arial,sans-serif; font-size: 16px; font-weight: bold; letter-spacing: 0.1em; line-height: 1.25; margin-left: 10px; padding: 3px 5px 1px; text-transform: uppercase; vertical-align: 3px;}
@@ -19,7 +21,7 @@ section.intro .get-started-intro {padding: 0; margin: 0;}
 section.intro .get-started-intro p {padding: 0; margin: 0; font-size: 1.6em;}
 
 .done-questions {margin-top:4em;}
-.step.current.homepage-only {padding-top:1em;}
+.step.current.homepage-only {padding-top:1em; margin-bottom: 50px;}
 .question-body ul {padding-left:1em;}
 .question-body ul.options {padding-left: 0;}
 #wrapper #content .article-container {max-width:100%; margin-right:20em; min-height: 30em;}
