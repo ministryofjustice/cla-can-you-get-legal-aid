@@ -39,6 +39,17 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 
+            
+            function trackOutboundLink(link, category, action) { 
+                 
+                try { 
+                _gaq.push(['_trackEvent', category , action]); 
+                } catch(err){}
+                 
+                setTimeout(function() {
+                document.location.href = link.href;
+                }, 100);
+            }
 			
 			$(document).ready(function() {
 						
@@ -218,8 +229,8 @@
                <div class="inner group">
                   <div class="result-info"><input type="hidden" id="outcome" value="Family, eligible"><h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
                      
-                     <p>You can get <a href="https://claonlineadvice.justice.gov.uk/">online advice</a> or contact a legal adviser or solicitor
-                     in your area.</p>
+                     <p>You can get <a href="https://claonlineadvice.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'claonlineadvice.justice.gov.uk');
+                     return false;">Apply online</a> or contact a legal adviser or solicitor in your area.</p>
                      
                      <p>You'll need to give evidence of the violence or abuse - eg a court order or letter from a doctor.</p> 
                      <form action="http://find-legal-advice.justice.gov.uk/search.php" method="get" id="local-locator-form" class="find-location-for-service"><input type="hidden" name="legal-aid-contract" value="on"><input type="hidden" name="category[]" value="mat"><input type="hidden" name="searchtype" value="location"><input type="hidden" name="searchbtn" value=""><input type="hidden" name="radius" value="20"><fieldset>

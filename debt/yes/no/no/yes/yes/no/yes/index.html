@@ -39,6 +39,17 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 
+            
+            function trackOutboundLink(link, category, action) { 
+                 
+                try { 
+                _gaq.push(['_trackEvent', category , action]); 
+                } catch(err){}
+                 
+                setTimeout(function() {
+                document.location.href = link.href;
+                }, 100);
+            }
 			
 			$(document).ready(function() {
 						
@@ -221,9 +232,12 @@
                      <p>You may be able to get free help from:</p>
                      
                      <ul>  
-                     <li> <a href="http://www.nationaldebtline.co.uk">National Debtline</a></li> 
-                     <li> <a href="http://www.stepchange.org">StepChange Debt Charity</a></li> 
-                     <li> <a href="http://www.adviceguide.org.uk">Citizens Advice</a></li>
+                     <li> <a href="http://www.nationaldebtline.co.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.nationaldebtline.co.uk');
+                     return false;">National Debtline</a></li> 
+                     <li> <a href="http://www.stepchange.org" onClick="trackOutboundLink(this, 'Outbound Links', 'www.stepchange.org'); return
+                     false;">StepChange Debt Charity</a></li> 
+                     <li> <a href="http://www.adviceguide.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.adviceguide.org.uk');
+                     return false;">Citizens Advice</a></li>
                      </ul>
                      
                      <p>You may also be able to get last-minute help on the day of the hearing from an adviser in the court building.</p>

@@ -39,6 +39,17 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 
+            
+            function trackOutboundLink(link, category, action) { 
+                 
+                try { 
+                _gaq.push(['_trackEvent', category , action]); 
+                } catch(err){}
+                 
+                setTimeout(function() {
+                document.location.href = link.href;
+                }, 100);
+            }
 			
 			$(document).ready(function() {
 						
@@ -216,8 +227,10 @@
                      <p>You may be able to get free help from:</p>
                      
                      <ul>
-                     <li><a href="http://www.ipsea.org.uk">Independent Parental Special Educational Advice (IPSEA)</a></li>
-                     <li><a href="http://www.childrenslegalcentre.com">Coram Children's Legal Centre</a></li>
+                     <li><a href="http://www.ipsea.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.ipsea.org.uk'); return false;">Independent
+                     Parental Special Educational Advice (IPSEA)</a></li>
+                     <li><a href="http://www.childrenslegalcentre.com" onClick="trackOutboundLink(this, 'Outbound Links', 'www.childrenslegalcentre.com');
+                     return false;">Coram Children's Legal Centre</a></li>
                      </ul>
                      
                      <p>You can also search for a solicitor in your area - you will have to pay for advice.</p> 

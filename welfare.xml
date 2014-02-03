@@ -70,16 +70,16 @@
 <outcome id="r1" result="eligible">
 	<word><![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2> 
 
-<p>You can contact the <a href="http://www.lawcentres.org.uk/our-work/welfare-benefits-upper-tribunal-service">Law Centre Network</a> or Civil Legal Advice:
-<br><a href="https://claonlineadvice.justice.gov.uk/">Apply online</a></p>
+<p>You can contact the <a href="http://www.lawcentres.org.uk/our-work/welfare-benefits-upper-tribunal-service" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk/our-work/welfare-benefits-upper-tribunal-service'); return false;">Law Centre Network</a> or Civil Legal Advice:
+<br><a href="https://claonlineadvice.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'claonlineadvice.justice.gov.uk'); return false;">Apply online</a></p>
 
 <p><strong>Phone:</strong> 0845 345 4 345
 <br><strong>Text:</strong> 'legalaid' and your name to 80010
 <br>Monday to Friday 9am to 8pm
 <br>Saturday 9am to 12:30pm
-<br><a href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
+<br><a href="https://www.gov.uk/call-charges" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/call-charges'); return false;">Find out about call charges</a></p>
 
-<p><a href="http://callmeback.justice.gov.uk/">Ask for a free call back</a></p> ]]></word>
+<p><a href="http://callmeback.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'callmeback.justice.gov.uk'); return false;">Ask for a free call back</a></p> ]]></word>
 
 </outcome>
 
@@ -90,9 +90,9 @@
 <p>You may be able to get free help from:</p>
 
 <ul>
-<li><a href="http://www.adviceguide.org.uk">Citizens Advice</a></li>
-<li><a href="http://www.lawcentres.org.uk/">Law Centres Network</a></li>
-<li><a href="http://probonoaccess.lawworks.org.uk/">LawWorks</a></li>
+<li><a href="http://www.adviceguide.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.adviceguide.org.uk'); return false;">Citizens Advice</a></li>
+<li><a href="http://www.lawcentres.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk'); return false;">Law Centres Network</a></li>
+<li><a href="http://probonoaccess.lawworks.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'probonoaccess.lawworks.org.uk'); return false;">LawWorks</a></li>
 </ul>
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
@@ -108,9 +108,9 @@
 <p>You may be able to get free help from:</p>
 
 <ul>
-<li><a href="http://www.adviceguide.org.uk">Citizens Advice</a></li>
-<li><a href="http://www.lawcentres.org.uk/">Law Centres Network</a></li>
-<li><a href="http://probonoaccess.lawworks.org.uk/">LawWorks</a></li>
+<li><a href="http://www.adviceguide.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.adviceguide.org.uk'); return false;">Citizens Advice</a></li>
+<li><a href="http://www.lawcentres.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk'); return false;">Law Centres Network</a></li>
+<li><a href="http://probonoaccess.lawworks.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'probonoaccess.lawworks.org.uk'); return false;">LawWorks</a></li>
 </ul> 
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>

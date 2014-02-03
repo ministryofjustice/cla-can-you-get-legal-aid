@@ -39,6 +39,17 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 
+            
+            function trackOutboundLink(link, category, action) { 
+                 
+                try { 
+                _gaq.push(['_trackEvent', category , action]); 
+                } catch(err){}
+                 
+                setTimeout(function() {
+                document.location.href = link.href;
+                }, 100);
+            }
 			
 			$(document).ready(function() {
 						
@@ -193,9 +204,12 @@
                      <p>You may be able to get free help from:</p>
                      
                      <ul>
-                     <li><a href="http://www.adviceguide.org.uk">Citizens Advice</a></li>
-                     <li><a href="http://www.lawcentres.org.uk/">Law Centres Network</a></li>
-                     <li><a href="http://probonoaccess.lawworks.org.uk/">LawWorks</a></li>
+                     <li><a href="http://www.adviceguide.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.adviceguide.org.uk');
+                     return false;">Citizens Advice</a></li>
+                     <li><a href="http://www.lawcentres.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk'); return
+                     false;">Law Centres Network</a></li>
+                     <li><a href="http://probonoaccess.lawworks.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'probonoaccess.lawworks.org.uk');
+                     return false;">LawWorks</a></li>
                      </ul> 
                      
                      <p>You can also search for a solicitor in your area - you will have to pay for advice.</p> 

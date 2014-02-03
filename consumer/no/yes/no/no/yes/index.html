@@ -39,6 +39,17 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 
+            
+            function trackOutboundLink(link, category, action) { 
+                 
+                try { 
+                _gaq.push(['_trackEvent', category , action]); 
+                } catch(err){}
+                 
+                setTimeout(function() {
+                document.location.href = link.href;
+                }, 100);
+            }
 			
 			$(document).ready(function() {
 						
@@ -208,15 +219,18 @@
                      <h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
                      
                      <p><strong> Contact Civil Legal Advice</strong>
-                     <br><a href="https://claonlineadvice.justice.gov.uk/">Apply online</a></p>
+                     <br><a href="https://claonlineadvice.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'claonlineadvice.justice.gov.uk');
+                     return false;">Apply online</a></p>
                      
                      <p><strong>Phone:</strong> 0845 345 4 345
                      <br><strong>Text:</strong> 'legalaid' and your name to 80010
                      <br>Monday to Friday 9am to 8pm
                      <br>Saturday 9am to 12:30pm
-                     <br><a href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
+                     <br><a href="https://www.gov.uk/call-charges" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/call-charges');
+                     return false;">Find out about call charges</a></p>
                      
-                     <p><a href="http://callmeback.justice.gov.uk/">Ask for a free call back</a></p>
+                     <p><a href="http://callmeback.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'callmeback.justice.gov.uk');
+                     return false;">Ask for a free call back</a></p>
                      
                   </div>
                </div>

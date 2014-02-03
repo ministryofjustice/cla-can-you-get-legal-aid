@@ -176,22 +176,22 @@
     <![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
 
 <p><strong> Contact Civil Legal Advice</strong>
-<br><a href="https://claonlineadvice.justice.gov.uk/">Apply online</a></p>
+<br><a href="https://claonlineadvice.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'claonlineadvice.justice.gov.uk'); return false;">Apply online</a></p>
 
 <p><strong>Phone:</strong> 0845 345 4 345
 <br><strong>Text:</strong> 'legalaid' and your name to 80010
 <br>Monday to Friday 9am to 8pm
 <br>Saturday 9am to 12:30pm
-<br><a href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
+<br><a href="https://www.gov.uk/call-charges" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/call-charges'); return false;">Find out about call charges</a></p>
 
-<p><a href="http://callmeback.justice.gov.uk/">Ask for a free call back</a></p> ]]></word>
+<p><a href="http://callmeback.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'callmeback.justice.gov.uk'); return false;">Ask for a free call back</a></p> ]]></word>
 
 </outcome>
 
 <outcome id="r2" postcode="true" result="eligible" category="MAT">
 	<word><![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
 
-<p>You can get <a href="https://claonlineadvice.justice.gov.uk/">online advice</a> or contact a legal adviser or solicitor in your area.</p>
+<p>You can get <a href="https://claonlineadvice.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'claonlineadvice.justice.gov.uk'); return false;">Apply online</a> or contact a legal adviser or solicitor in your area.</p>
 
 <p>You'll need to give evidence of the violence or abuse - eg a court order or letter from a doctor.</p> ]]></word>
 
@@ -202,7 +202,7 @@
 
 	<word><![CDATA[<h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
 
-<p>You may be able to get free help from a local <a href="http://victimservices.justice.gov.uk">victims service</a>.</p> 
+<p>You may be able to get free help from a local <a href="http://victimservices.justice.gov.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'victimservices.justice.gov.uk'); return false;">victims service</a>.</p> 
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p>]]></word>
 
@@ -213,7 +213,7 @@
 
 <p>This is because legal aid doesn't cover your type of problem.*</p>
 
-<p>You may be able to get free help from a local <a href="http://victimservices.justice.gov.uk">victims service</a>.</p>
+<p>You may be able to get free help from a local <a href="http://victimservices.justice.gov.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'victimservices.justice.gov.uk'); return false;">victims service</a>.</p>
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p>]]></word>
 
@@ -234,7 +234,7 @@
 	<word><![CDATA[<h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
 
 
-<p>You could contact a local <a href="http://www.familymediationhelpline.co.uk/find-service.php/">mediation service</a>, which could help you work out arrangements about children and finances with your ex-partner.</p>
+<p>You could contact a local <a href="http://www.familymediationhelpline.co.uk/find-service.php/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.familymediationhelpline.co.uk'); return false;">mediation service</a>, which could help you work out arrangements about children and finances with your ex-partner.</p>
 
 <p>This is usually cheaper than using solicitors.</p> ]]></word>
 
@@ -244,17 +244,16 @@
 <outcome id="r7" postcode="true" result="eligible" category="MAT">
 	<word><![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
 
-
 <p><strong> Contact Civil Legal Advice</strong>
-<br><a href="https://claonlineadvice.justice.gov.uk/">Apply online</a></p>
+<br><a href="https://claonlineadvice.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'claonlineadvice.justice.gov.uk'); return false;">Apply online</a></p>
 
 <p><strong>Phone:</strong> 0845 345 4 345
 <br><strong>Text:</strong> 'legalaid' and your name to 80010
 <br>Monday to Friday 9am to 8pm
 <br>Saturday 9am to 12:30pm
-<br><a href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
+<br><a href="https://www.gov.uk/call-charges" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/call-charges'); return false;">Find out about call charges</a></p>
 
-<p><a href="http://callmeback.justice.gov.uk/">Ask for a free call back</a></p>
+<p><a href="http://callmeback.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'callmeback.justice.gov.uk'); return false;">Ask for a free call back</a></p>
 
 <p>You can also contact a legal adviser or solicitor in your area.</p> ]]></word>
 </outcome>
@@ -270,9 +269,9 @@
 <p>You may be able to get free help from:</p>
 
 <ul>
-<li> <a href="http://www.sortingoutseparation.org.uk">Sorting out Separation</a></li>
-<li><a href="http://www.childrenslegalcentre.com">Coram Children's Legal Centre</a></li>
-<li><a href="http://www.adviceguide.org.uk">Citizens Advice</a></li></ul>
+<li> <a href="http://www.sortingoutseparation.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.sortingoutseparation.org.uk'); return false;">Sorting out Separation</a></li>
+<li><a href="http://www.childrenslegalcentre.com" onClick="trackOutboundLink(this, 'Outbound Links', 'www.childrenslegalcentre.com'); return false;">Coram Children's Legal Centre</a></li>
+<li><a href="http://www.adviceguide.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.adviceguide.org.uk'); return false;">Citizens Advice</a></li></ul>
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p>]]></word>
 <footnote><![CDATA[ <p>*Legal aid is available in exceptional cases. You could seek advice from a legal adviser about whether an application might succeed in your case and how to apply.</p>]]></footnote>

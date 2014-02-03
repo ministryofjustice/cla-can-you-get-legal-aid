@@ -39,6 +39,17 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 
+            
+            function trackOutboundLink(link, category, action) { 
+                 
+                try { 
+                _gaq.push(['_trackEvent', category , action]); 
+                } catch(err){}
+                 
+                setTimeout(function() {
+                document.location.href = link.href;
+                }, 100);
+            }
 			
 			$(document).ready(function() {
 						
@@ -219,8 +230,9 @@
                   <div class="result-info"><input type="hidden" id="outcome" value="Family, not eligible"><h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
                      
                      
-                     <p>You could contact a local <a href="http://www.familymediationhelpline.co.uk/find-service.php/">mediation service</a>, which
-                     could help you work out arrangements about children and finances with your ex-partner.</p>
+                     <p>You could contact a local <a href="http://www.familymediationhelpline.co.uk/find-service.php/" onClick="trackOutboundLink(this,
+                     'Outbound Links', 'www.familymediationhelpline.co.uk'); return false;">mediation service</a>, which could help you work out
+                     arrangements about children and finances with your ex-partner.</p>
                      
                      <p>This is usually cheaper than using solicitors.</p> 
                      <form action="http://find-legal-advice.justice.gov.uk/search.php" method="get" id="local-locator-form" class="find-location-for-service"><input type="hidden" name="searchtype" value="location"><input type="hidden" name="searchbtn" value=""><input type="hidden" name="radius" value="20"><fieldset>

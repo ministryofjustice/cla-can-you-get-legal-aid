@@ -39,6 +39,17 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 
+            
+            function trackOutboundLink(link, category, action) { 
+                 
+                try { 
+                _gaq.push(['_trackEvent', category , action]); 
+                } catch(err){}
+                 
+                setTimeout(function() {
+                document.location.href = link.href;
+                }, 100);
+            }
 			
 			$(document).ready(function() {
 						
@@ -206,7 +217,8 @@
                <div class="inner group">
                   <div class="result-info"><input type="hidden" id="outcome" value="Family, not eligible"><h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
                      
-                     <p>You may be able to get free help from a local <a href="http://victimservices.justice.gov.uk">victims service</a>.</p> 
+                     <p>You may be able to get free help from a local <a href="http://victimservices.justice.gov.uk" onClick="trackOutboundLink(this,
+                     'Outbound Links', 'victimservices.justice.gov.uk'); return false;">victims service</a>.</p> 
                      
                      <p>You can also search for a solicitor in your area - you will have to pay for advice.</p>
                      <form method="post" class="find-location-for-service" action="http://www.lawsociety.org.uk/find-a-solicitor/">

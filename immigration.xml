@@ -73,8 +73,8 @@
 <p> You may be able to get free help from:</p> 
 
 <ul>
-<li> <a href="http://www.adviceguide.org.uk">Citizens Advice</a></li> 
-<li> <a href="http://www.lawcentres.org.uk/i-am-looking-for-advice">Law Centres Network</a></li> 
+<li> <a href="http://www.adviceguide.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.adviceguide.org.uk'); return false;">Citizens Advice</a></li>
+<li> <a href="http://www.lawcentres.org.uk/i-am-looking-for-advice" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk/i-am-looking-for-advice'); return false;">Law Centres Network</a></li> 
 </ul>
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
@@ -91,8 +91,8 @@
 <p>You may be able to get free help from:</p> 
 
 <ul>
-<li> <a href="http://www.adviceguide.org.uk">Citizens Advice</a></li> 
-<li> <a href="http://www.lawcentres.org.uk/i-am-looking-for-advice">Law Centres Network</a></li> 
+<li> <a href="http://www.adviceguide.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.adviceguide.org.uk'); return false;">Citizens Advice</a></li>
+<li> <a href="http://www.lawcentres.org.uk/i-am-looking-for-advice" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk/i-am-looking-for-advice'); return false;">Law Centres Network</a></li> 
 </ul>
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
