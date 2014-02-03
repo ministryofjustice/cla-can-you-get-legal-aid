@@ -25,17 +25,17 @@ public partial class cla : System.Web.UI.Page
         string xslPath = Server.MapPath("cla.xsl");
         Hashtable xsltParams = new Hashtable();
 
-		// the following functions build each section in turn
+	// the following functions build each section in turn
 		
-	//build(Server.MapPath("housing.xml"), xslPath, "housing");  
-        //build(Server.MapPath("debt.xml"), xslPath, "debt");
-	//build(Server.MapPath("discrimination.xml"), xslPath, "discrimination");
-        //build(Server.MapPath("consumer.xml"), xslPath, "consumer");
-        //build(Server.MapPath("education.xml"), xslPath, "education");
-        //build(Server.MapPath("employment.xml"), xslPath, "employment");  
-        //build(Server.MapPath("family.xml"), xslPath, "family");          
-        //build(Server.MapPath("immigration.xml"), xslPath, "immigration");
-        //build(Server.MapPath("welfare.xml"), xslPath, "welfare");
+	build(Server.MapPath("housing.xml"), xslPath, "housing");  
+        build(Server.MapPath("debt.xml"), xslPath, "debt");
+	build(Server.MapPath("discrimination.xml"), xslPath, "discrimination");
+        build(Server.MapPath("consumer.xml"), xslPath, "consumer");
+        build(Server.MapPath("education.xml"), xslPath, "education");
+        build(Server.MapPath("employment.xml"), xslPath, "employment");  
+        build(Server.MapPath("family.xml"), xslPath, "family");          
+        build(Server.MapPath("immigration.xml"), xslPath, "immigration");
+        build(Server.MapPath("welfare.xml"), xslPath, "welfare");
           
         if (Context.Request.QueryString["id"] != null) {
             xsltParams.Add("id", Context.Request.QueryString["id"]);

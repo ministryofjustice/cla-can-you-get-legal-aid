@@ -68,18 +68,52 @@
 <!-- BEGIN OUTCOMES (WELFARE) -->
 
 <outcome id="r1" result="eligible">
-	<word><![CDATA[<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2> 
+	<word><![CDATA[
 
-<p>You can contact the <a href="http://www.lawcentres.org.uk/our-work/welfare-benefits-upper-tribunal-service" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk/our-work/welfare-benefits-upper-tribunal-service'); return false;">Law Centre Network</a> or Civil Legal Advice:
-<br><a href="https://claonlineadvice.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'claonlineadvice.justice.gov.uk'); return false;">Apply online</a></p>
+<h2 class="result-title">You may be able to get legal aid to pay for help and advice.</h2>
 
-<p><strong>Phone:</strong> 0845 345 4 345
-<br><strong>Text:</strong> 'legalaid' and your name to 80010
-<br>Monday to Friday 9am to 8pm
-<br>Saturday 9am to 12:30pm
-<br><a href="https://www.gov.uk/call-charges" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gov.uk/call-charges'); return false;">Find out about call charges</a></p>
+<p>Contact <a href="http://lawcentres.org.uk/our-work/welfare-benefits-upper-tribunal-service" onClick="trackOutboundLink(this, 'Outbound Links', 'lawcentres.org.uk/our-work/welfare-benefits-upper-tribunal-service'); return false;">Law Centres Network</a>, or one of the organisations below:</p>
 
-<p><a href="http://callmeback.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'callmeback.justice.gov.uk'); return false;">Ask for a free call back</a></p> ]]></word>
+<p><a href="http://www.ablc.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.ablc.org.uk'); return false;">Avon & Bristol Law Centre</a>
+<br><strong>Phone:</strong> 0117 924 8662</p>
+
+<p><a href="http://www.cumbrialawcentre.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.cumbrialawcentre.org.uk'); return false;">Cumbria Law Centre</a>
+<br><strong>Phone:</strong> 01228 515 129</p>
+
+<p><a href="http://www.gloucesterlawcentre.co.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.gloucesterlawcentre.co.uk'); return false;">Gloucester Law Centre</a>
+<br><strong>Phone:</strong> 01452 423 492</p>
+
+<p>Kirklees Law Centre
+<br><strong>Phone:</strong> 01924 439 829</p>
+
+<p>(Liverpool) <a href="http://www.qualitysolicitors.com/jacksoncanter" onClick="trackOutboundLink(this, 'Outbound Links', 'www.qualitysolicitors.com/jacksoncanter'); return false;">Jackson & Canter LLP</a>
+<br><strong>Phone:</strong> 0151 227 1429</p>
+
+<p><a href="http://www.merseysidewelfarerights.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.merseysidewelfarerights.org.uk'); return false;">Merseyside Welfare Rights</a>
+<br><strong>Phone:</strong> 0151 709 0504</p>
+
+<p><a href="http://oldhamcab.azurewebsites.net" onClick="trackOutboundLink(this, 'Outbound Links', 'oldhamcab.azurewebsites.net'); return false;">Oldham Metropolitan Citizens Advice Bureau</a>
+<br><strong>Phone:</strong> 0161 620 9317</p>
+
+<p><a href="http://http://rochdalecab.azurewebsites.net" onClick="trackOutboundLink(this, 'Outbound Links', 'rochdalecab.azurewebsites.net'); return false;">Rochdale Citizens Advice Bureau</a>
+<br><strong>Phone:</strong> 01706 666 676</p>
+
+<p><a href="http://www.advicesheffield.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'www.advicesheffield.org.uk'); return false;">Sheffield Citizens Advice & Law Centre</a>
+<br><strong>Phone:</strong> 0114 275 4578</p>
+
+<p>(Sheffield) <a href="http://england.shelter.org.uk" onClick="trackOutboundLink(this, 'Outbound Links', 'england.shelter.org.uk'); return false;">Shelter</a>
+<br><strong>Phone:</strong> 0344 515 1515</p>
+
+<p>(Sheffield) <a href="http://www.howellsllp.com/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.howellsllp.com'); return false;">Howells LLP</a>
+<br><strong>Phone:</strong> 0114 249 6666</p>
+
+<p><a href="http://www.stockton-cab.co.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.stockton-cab.co.uk'); return false;">Stockton and District Advice and Information Service</a>
+<br><strong>Phone:</strong> 01642 633 877</p>
+
+<p>(Swansea) <a href="http://www.tyarian.com/" onClick="trackOutboundLink(this, 'Outbound Links', 'www.tyarian.com'); return false;">Ty Arian Ltd</a>
+<br><strong>Phone:</strong> 01792 484 333</p>
+
+		]]></word>
 
 </outcome>
 
