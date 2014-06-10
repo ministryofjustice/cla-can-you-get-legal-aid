@@ -213,47 +213,61 @@
                             <xsl:choose>
                                 <xsl:when test="//*[@id = $focus]/@law-society != ''"> <!-- Law Society provider search -->
 
-                                    <form method="post" class="find-location-for-service" action="http://www.lawsociety.org.uk/find-a-solicitor/">
+                                    <form method="get" class="find-location-for-service" action="http://solicitors.lawsociety.org.uk/search/results">
                                         <fieldset>
                                             <legend><strong>Find a solicitor</strong><br /></legend>
 											
                                             <label for="postcode">
                                                 Enter a UK postcode
-                                                <input class="postcode" id="postcode" name="POSTCODE" type="text" placeholder="eg W12 0LL" />
-                                                <input type="hidden" name="__VIEWSTATE" value="" />
-                                                <select id="AREA" name="AREA" class="dropmenu" style="display:none;">
+                                                <input class="postcode" id="postcode" name="Location" type="text" placeholder="eg W12 0LL" />
+                                                <input name="Pro" type="text" value="False" />
+                                                <select id="AREA" name="UmbrellaLegalIssue" class="dropmenu" style="display:none;">
                                                 <xsl:choose>
                                                     <xsl:when test="/category[@name = 'Consumer']">
-                                                        <option value="C:Consumer problems">Consumer</option>
+                                                        <option value="LIUCSU">Consumer</option>
                                                     </xsl:when>
                                                      <xsl:when test="/category[@name = 'Debt']">
-                                                         <option value="G:Debt and money advice">Debt</option>
+                                                         <option value="LIUMAD">Debt</option>
                                                     </xsl:when>
                                                     <xsl:when test="/category[@name = 'Education']">
                                                          <option value="MM:Education law">Education</option>
                                                     </xsl:when>
                                                      <xsl:when test="/category[@name = 'Employment']">
-                                                         <option value="I:Employment law">Employment</option>
+                                                         <option value="LIUEMP">Employment</option>
                                                     </xsl:when>
                                                       <xsl:when test="/category[@name = 'Family']">
-                                                         <option value="J:Family law">Family</option>
+                                                         <option value="LIUFAM">Family</option>
                                                     </xsl:when>
                                                     <xsl:when test="/category[@name = 'Housing']">
-                                                         <option value="K:Landlord and tenant - residential">Housing</option>
+                                                         <option value="LIUPRE">Housing</option>
                                                     </xsl:when>
                                                     <xsl:when test="/category[@name = 'Immigration']">
-                                                         <option value="L:Immigration law">Immigration</option>
+                                                         <option value="LIUIMM">Immigration</option>
                                                     </xsl:when>
                                                      <xsl:when test="/category[@name = 'Welfare benefits']">
-                                                         <option value="S:Welfare benefits">Welfare benefits</option>
+                                                         <option value="LIUSWB">Welfare benefits</option>
                                                     </xsl:when>
- 
                                                 </xsl:choose>
                                                 </select>
                                             </label>
                                             <input type="submit" value="Find" class="button" />
                                             
                                             <br />
+
+<!--
+ Consumer = "LIUCSU">Consumer and civil rights
+ Debt = "LIUMAD">Money and debt
+ Discrimination = ???
+ Education = ????
+ Employment = "LIUEMP">Employment
+ Family = "LIUFAM">Family and relationships
+ Housing = "LIUPRE">Houses, property and neighbours
+ Immigration = "LIUIMM">Immigration and changing countries
+ Welfare benefits = "LIUSWB">Social welfare, health and benefits
+
+http://solicitors.lawsociety.org.uk/search/results?Type=0&amp;IncludeNlsp=True&amp;Location=N5&amp;AreaOfPractice1=EDU&amp;Pro=True
+-->
+
 
                                             <!-- <img src="/logos/law_society_logo.jpg" /> -->
 
@@ -531,48 +545,48 @@
 			</title>
 
             <xsl:text disable-output-escaping="yes">&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</xsl:text>
-            <link href="https://assets.digital.cabinet-office.gov.uk/static/application-2303f6ca72c92152dff6a0bb28bfdd5e.css" media="screen" rel="stylesheet" type="text/css" />
+            <link href="/css/application.css" media="screen" rel="stylesheet" type="text/css" />
             <xsl:text disable-output-escaping="yes">&lt;!--&lt;![endif]--&gt;</xsl:text>
 
             <xsl:text disable-output-escaping="yes">&lt;!--[if IE 6]&gt;</xsl:text>
-            <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-d007bd9fb284c2ae437ae840e64aea58.css" media="screen" rel="stylesheet" type="text/css" />
+            <link href="/css/application-ie6.css" media="screen" rel="stylesheet" type="text/css" />
             <xsl:text disable-output-escaping="yes">&lt;![endif]--&gt;</xsl:text>
 
             <xsl:text disable-output-escaping="yes">&lt;!--[if IE 7]&gt;</xsl:text>
-            <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-0bb077b8bf271756187007194a566174.css" media="screen" rel="stylesheet" type="text/css" />
+            <link href="/css/application-ie7.css" media="screen" rel="stylesheet" type="text/css" />
             <xsl:text disable-output-escaping="yes">&lt;![endif]--&gt;</xsl:text>
  
             <xsl:text disable-output-escaping="yes">&lt;!--[if IE 8]&gt;</xsl:text>
-            <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-f14bee9c9d814d2dd164a4d52d1d6ec1.css" media="screen" rel="stylesheet" type="text/css" />
+            <link href="/css/application-ie8.css" media="screen" rel="stylesheet" type="text/css" />
             <xsl:text disable-output-escaping="yes">&lt;![endif]--&gt;</xsl:text>
             
-            <link href="https://assets.digital.cabinet-office.gov.uk/static/print-ea11b132d3477f9cfdd93e41c37c1df8.css" media="print" rel="stylesheet" type="text/css" />
+            <link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
 
             <xsl:text disable-output-escaping="yes">&lt;!--[if gte IE 9]&gt;&lt;!--&gt;</xsl:text>
-            <link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-0fb6b917e34e45c93a44eec72dcc21de.css" media="all" rel="stylesheet" type="text/css" />
+            <link href="/css/fonts.css" media="all" rel="stylesheet" type="text/css" />
             <xsl:text disable-output-escaping="yes">&lt;!--&lt;![endif]--&gt;</xsl:text>
             
-            <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
+            <script src="/js/jquery-1.7.2.js" type="text/javascript"></script>
             
-            <xsl:text disable-output-escaping="yes">&lt;!-- &lt;script defer src="https://assets.digital.cabinet-office.gov.uk/static/application-c4304900b102c5d0fab698d8a8f48d8a.js" type="text/javascript"&gt;&lt;/script&gt; --&gt;</xsl:text>            
+            <xsl:text disable-output-escaping="yes">&lt;!-- &lt;script defer src="/js/application.js" type="text/javascript"&gt;&lt;/script&gt; --&gt;</xsl:text>            
 
             <xsl:text disable-output-escaping="yes">&lt;!--[if lt IE 9]&gt;&lt;!--&gt;</xsl:text>
-            <script src="https://assets.digital.cabinet-office.gov.uk/static/ie-27ccded64045ab36dbfb67c2f47c362b.js" type="text/javascript"></script>
+            <script src="/js/ie.js" type="text/javascript"></script>
             <xsl:text disable-output-escaping="yes">&lt;![endif]--&gt;</xsl:text>
 
             
             
-            <link rel="shortcut icon" href="https://assets.digital.cabinet-office.gov.uk/static/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon" />
+            <link rel="shortcut icon" href="/static/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon" />
             
             
             <xsl:comment> For third-generation iPad with high-resolution Retina display: </xsl:comment>
-	        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png" />
+	        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png" />
             <xsl:comment> For iPhone with high-resolution Retina display: </xsl:comment>
-            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png" />
             <xsl:comment> For first- and second-generation iPad: </xsl:comment>
-            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png" />
             <xsl:comment> For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: </xsl:comment>
-            <link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png" />
+            <link rel="apple-touch-icon-precomposed" href="/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             
             <!-- PJAX IMPLEMENTATION -->
@@ -696,7 +710,7 @@
             </script>
             <script type="text/javascript" src="/js/jquery.history.js"></script>
 
-            <script type="text/javascript" src="js/cla_functions.js"></script>
+            <script type="text/javascript" src="/js/cla_functions.js"></script>
 
             <meta name="robots" content="noindex" />
             <link href="/css/content.css" media="screen" rel="stylesheet" type="text/css" />
@@ -874,7 +888,7 @@
                         <div class="open-government-licence">
                             <h2>
                                 <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">
-                                    <img alt="OGL" src="https://assets.digital.cabinet-office.gov.uk/static/open-government-licence_2x-d273d7eca3045d3b710a863d9bfc0b33.png" />
+                                    <img alt="OGL" src="/static/open-government-licence_2x.png" />
                                 </a>
                             </h2>
                             <p>

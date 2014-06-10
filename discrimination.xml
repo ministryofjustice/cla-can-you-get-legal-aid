@@ -59,7 +59,7 @@
 <p><strong> Contact Civil Legal Advice</strong>
 <br><a href="https://claonlineadvice.justice.gov.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'claonlineadvice.justice.gov.uk'); return false;">Apply online</a></p>
 
-<p><strong>Phone:</strong> 0845 345 4 345
+<p><strong>Phone:</strong> 0345 345 4 345
 <br><strong>Text:</strong> 'legalaid' and your name to 80010
 <br>Monday to Friday 9am to 8pm
 <br>Saturday 9am to 12:30pm
@@ -71,7 +71,7 @@
 </outcome>
 
 
-<outcome id="r2" postcode="true" law-society="true" result="not eligible">
+<outcome id="r2" result="not eligible">
 
 	<word><![CDATA[<h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
 
@@ -82,13 +82,13 @@
 <li><a href="http://www.lawcentres.org.uk/i-am-looking-for-advice" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk/i-am-looking-for-advice'); return false;">Law Centres Network</a></li>
 </ul>
 
-<p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
+<p>You can also <a href="http://solicitors.lawsociety.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'solicitors.lawsociety.org.uk'); return false;">Law Society</a></li> search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
 
 
 </outcome>
 
 
-<outcome id="r3" postcode="true" law-society="true" result="not eligible">
+<outcome id="r3" result="not eligible">
 
 	<word><![CDATA[<h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
 
@@ -101,7 +101,7 @@
 <li><a href="http://www.lawcentres.org.uk/i-am-looking-for-advice" onClick="trackOutboundLink(this, 'Outbound Links', 'www.lawcentres.org.uk/i-am-looking-for-advice'); return false;">Law Centres Network</a></li>
 </ul>
 
-<p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
+<p>You can also <a href="http://solicitors.lawsociety.org.uk/" onClick="trackOutboundLink(this, 'Outbound Links', 'solicitors.lawsociety.org.uk'); return false;">Law Society</a></li> search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
 
 <footnote><![CDATA[ <p class="note">*Legal aid is available in exceptional cases. You could seek advice from a legal adviser about whether an application might succeed in your case and how to apply.</p>]]></footnote>
 
