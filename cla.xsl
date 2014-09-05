@@ -442,7 +442,7 @@
        
     
     <xsl:template name="path-builder">
-    <xsl:param name="num" />/<xsl:value-of select="$id" /><xsl:if test="$a1 != ''">/</xsl:if><xsl:choose>
+    <xsl:param name="num" />/<xsl:value-of select="$id" /><xsl:choose><xsl:when test="$num = 1"> </xsl:when><xsl:otherwise><xsl:if test="$a1 != ''">/</xsl:if></xsl:otherwise></xsl:choose><xsl:choose>
     <xsl:when test="$num = 2"><xsl:value-of select="$a1"/></xsl:when>
     <xsl:when test="$num = 3"><xsl:value-of select="$a1"/>/<xsl:value-of select="$a2"/></xsl:when>
     <xsl:when test="$num = 4"><xsl:value-of select="$a1"/>/<xsl:value-of select="$a2"/>/<xsl:value-of select="$a3"/></xsl:when>
