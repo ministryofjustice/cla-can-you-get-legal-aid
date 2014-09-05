@@ -220,54 +220,50 @@
                                             <label for="postcode">
                                                 Enter a UK postcode
                                                 <input class="postcode" id="postcode" name="Location" type="text" placeholder="eg W12 0LL" />
-                                                <input name="Pro" type="text" value="False" />
-                                                <select id="AREA" name="UmbrellaLegalIssue" class="dropmenu" style="display:none;">
-                                                <xsl:choose>
-                                                    <xsl:when test="/category[@name = 'Consumer']">
-                                                        <option value="LIUCSU">Consumer</option>
-                                                    </xsl:when>
-                                                     <xsl:when test="/category[@name = 'Debt']">
-                                                         <option value="LIUMAD">Debt</option>
-                                                    </xsl:when>
-                                                    <xsl:when test="/category[@name = 'Education']">
-                                                         <option value="MM:Education law">Education</option>
-                                                    </xsl:when>
-                                                     <xsl:when test="/category[@name = 'Employment']">
-                                                         <option value="LIUEMP">Employment</option>
-                                                    </xsl:when>
-                                                      <xsl:when test="/category[@name = 'Family']">
-                                                         <option value="LIUFAM">Family</option>
-                                                    </xsl:when>
-                                                    <xsl:when test="/category[@name = 'Housing']">
-                                                         <option value="LIUPRE">Housing</option>
-                                                    </xsl:when>
-                                                    <xsl:when test="/category[@name = 'Immigration']">
-                                                         <option value="LIUIMM">Immigration</option>
-                                                    </xsl:when>
-                                                     <xsl:when test="/category[@name = 'Welfare benefits']">
-                                                         <option value="LIUSWB">Welfare benefits</option>
-                                                    </xsl:when>
-                                                </xsl:choose>
-                                                </select>
+
+<!-- EDUCATION category required 'Pro' search within Law Society website -->
+
+                                                    <xsl:choose>
+                                                        <xsl:when test="/category[@name = 'Education']">
+                                                            <input name="Pro" type="hidden" value="True" />
+                                                            <input name="AreaOfPractice1" type="hidden" value="EDU" />
+                                                            <input name="Type" type="hidden" value="0" />
+                                                            <input name="IncludeNlsp" type="hidden" value="True" />
+                                                        </xsl:when>
+                                                        <xsl:otherwise>
+                                                            <input name="Pro" type="hidden" value="False" />
+                                                            <select id="AREA" name="UmbrellaLegalIssue" class="dropmenu" style="display:none;">
+                                                            <xsl:choose>
+                                                                <xsl:when test="/category[@name = 'Consumer']">
+                                                                    <option value="LIUCSU">Consumer</option>
+                                                                </xsl:when>
+                                                                 <xsl:when test="/category[@name = 'Debt']">
+                                                                     <option value="LIUMAD">Debt</option>
+                                                                </xsl:when>
+                                                                 <xsl:when test="/category[@name = 'Employment']">
+                                                                     <option value="LIUEMP">Employment</option>
+                                                                </xsl:when>
+                                                                  <xsl:when test="/category[@name = 'Family']">
+                                                                     <option value="LIUFAM">Family</option>
+                                                                </xsl:when>
+                                                                <xsl:when test="/category[@name = 'Housing']">
+                                                                     <option value="LIUPRE">Housing</option>
+                                                                </xsl:when>
+                                                                <xsl:when test="/category[@name = 'Immigration']">
+                                                                     <option value="LIUIMM">Immigration</option>
+                                                                </xsl:when>
+                                                                 <xsl:when test="/category[@name = 'Welfare benefits']">
+                                                                     <option value="LIUSWB">Welfare benefits</option>
+                                                                </xsl:when>
+                                                            </xsl:choose>
+                                                            </select>
+                                                        </xsl:otherwise>
+                                                    </xsl:choose>
+
                                             </label>
                                             <input type="submit" value="Find" class="button" />
                                             
                                             <br />
-
-<!--
- Consumer = "LIUCSU">Consumer and civil rights
- Debt = "LIUMAD">Money and debt
- Discrimination = ???
- Education = ????
- Employment = "LIUEMP">Employment
- Family = "LIUFAM">Family and relationships
- Housing = "LIUPRE">Houses, property and neighbours
- Immigration = "LIUIMM">Immigration and changing countries
- Welfare benefits = "LIUSWB">Social welfare, health and benefits
-
-http://solicitors.lawsociety.org.uk/search/results?Type=0&amp;IncludeNlsp=True&amp;Location=N5&amp;AreaOfPractice1=EDU&amp;Pro=True
--->
-
 
                                             <!-- <img src="/logos/law_society_logo.jpg" /> -->
 
