@@ -76,7 +76,7 @@
                         <hgroup>
                             <h1><span>Service</span> Check if you can get legal aid</h1>
                             
-                            <p><xsl:call-template name="vars" /></p>
+                            <!--<p><xsl:call-template name="vars" /></p>-->
                             
                         </hgroup>
                         <nav class="skip-to-related">
