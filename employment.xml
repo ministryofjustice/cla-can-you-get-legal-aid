@@ -101,8 +101,10 @@
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
 
-<footnote><![CDATA[ <p class="note">*Legal aid is available in exceptional cases. You could seek advice from a legal adviser about whether an application might succeed in your case and how to apply.</p>]]></footnote>
-
+<footnote><![CDATA[ <p class="note">*
+	Legal aid may still be available in exceptional cases. You can ask a legal adviser if an application might succeed in your case and how to apply. You can also apply directly to the <a href="https://www.gov.uk/legal-aid-apply-for-exceptional-case-funding">Legal Aid Agency</a>.
+	</p>]]>
+</footnote>
 </outcome>
 
 <outcome id="r3" postcode="true" law-society="true" result="not eligible">

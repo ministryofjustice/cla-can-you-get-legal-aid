@@ -86,7 +86,7 @@
 
 	<word><![CDATA[ <h2 class="result-title">It looks like you won't be able to get legal aid.</h2>
 
-<p>This is because legal aid doesn't cover your type of problem.</p>
+<p>This is because legal aid doesn't cover your type of problem.*</p>
 
 <p>You may be able to get free help from:</p> 
 
@@ -96,6 +96,11 @@
 </ul>
 
 <p>You can also search for a solicitor in your area - you will have to pay for advice.</p> ]]></word>
+
+<footnote><![CDATA[ <p class="note">*
+	Legal aid may still be available in exceptional cases. You can ask a legal adviser if an application might succeed in your case and how to apply. You can also apply directly to the <a href="https://www.gov.uk/legal-aid-apply-for-exceptional-case-funding">Legal Aid Agency</a>.
+	</p>]]>
+</footnote>
 
 </outcome>
 
